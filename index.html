@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro con Palabra Secreta</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Registro e Inicio de Sesión</h1>
+    <div class="form-container">
+      <h2>Registro</h2>
+      <form id="register-form">
+        <label for="register-secret">Palabra secreta (máx. 100 caracteres):</label>
+        <input type="text" id="register-secret" maxlength="100" required>
+        <button type="submit">Registrarse</button>
+      </form>
+    </div>
+    <div class="form-container">
+      <h2>Inicio de Sesión</h2>
+      <form id="login-form">
+        <label for="login-secret">Palabra secreta:</label>
+        <input type="text" id="login-secret" required>
+        <button type="submit">Iniciar Sesión</button>
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
