@@ -1,31 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Registro con Palabra Secreta</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Página de Registro</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Registro e Inicio de Sesión</h1>
+  <header>
+    <div class="container">
+      <h1>Regístrate en la página</h1>
+    </div>
+  </header>
+
+  <main>
     <div class="form-container">
-      <h2>Registro</h2>
-      <form id="register-form">
-        <label for="register-secret">Palabra secreta (máx. 100 caracteres):</label>
-        <input type="text" id="register-secret" maxlength="100" required>
+      <form action="/register" method="POST">
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required placeholder="Ingresa tu correo electrónico">
+
+        <label for="username">Nombre de usuario:</label>
+        <input type="text" id="username" name="username" required placeholder="Ingresa tu nombre de usuario">
+
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" required placeholder="Crea una contraseña">
+
         <button type="submit">Registrarse</button>
       </form>
     </div>
-    <div class="form-container">
-      <h2>Inicio de Sesión</h2>
-      <form id="login-form">
-        <label for="login-secret">Palabra secreta:</label>
-        <input type="text" id="login-secret" required>
-        <button type="submit">Iniciar Sesión</button>
-      </form>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Página de Registro. Todos los derechos reservados.</p>
     </div>
-  </div>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
